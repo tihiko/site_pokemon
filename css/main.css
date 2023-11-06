@@ -1,0 +1,171 @@
+body{
+    
+    width: 100%;
+    height:100%;  
+    margin: 0 auto;
+}
+
+
+
+.menu ul li {
+   
+    margin: 0 auto;
+    position: relative;
+    display: inline-block;
+    color:#000000;
+    margin-left: 5px;
+
+
+}
+
+.menu ul li a {
+    
+    margin: 0 auto;
+    color:#000000;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: 900;
+    -webkit-text-stroke-width: 0.1px; 
+    -webkit-text-stroke-color: #ffffff; 
+    text-decoration: none;
+    transition:background-color 400ms;  
+   
+}
+
+.menu a::after{
+    margin: 0 auto;
+    content:"";
+    display: block;
+    height: 7px;
+    width: 100%;
+}
+
+.menu li:nth-child(1) a::after {
+    background-color: #ff6600
+}
+
+.menu li:nth-child(2) a::after {
+    background-color: #0099cc; 
+    
+}
+
+.menu li:nth-child(3) a::after {
+    background-color: #ff3366;
+    
+}
+
+.menu li:nth-child(4) a::after {
+    background-color: #33cc33; 
+    
+}
+
+.menu li:nth-child(5) a::after {
+    background-color: #9933cc; 
+    
+}
+
+
+.menu li:nth-child(1) a:hover {
+    background-color: #ff6600; /* Cor de fundo para o botão HOME quando o mouse está sobre ele */
+    
+}
+
+.menu li:nth-child(2) a:hover {
+    background-color: #0099cc; /* Cor de fundo para o botão POKEDEX quando o mouse está sobre ele */
+    
+}
+
+.menu li:nth-child(3) a:hover {
+    background-color: #ff3366; /* Cor de fundo para o botão APLICATIVOS quando o mouse está sobre ele */
+    
+}
+
+.menu li:nth-child(4) a:hover {
+    background-color: #33cc33; /* Cor de fundo para o botão ANIME quando o mouse está sobre ele */
+    
+}
+
+.menu li:nth-child(5) a:hover {
+    background-color: #9933cc; /* Cor de fundo para o botão JOGOS quando o mouse está sobre ele */
+    
+}
+
+
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+    gap: 20px;
+    overflow: hidden;
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    transition: all 400ms;
+    
+  }
+
+.box{
+    position: relative;
+    transition: all 400ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box::after{
+    content: attr(data-text);
+    position: absolute;
+    bottom: 20px;
+    background: #000000;
+    color: #ffffff;
+    
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    transform: translateY(60px);
+    opacity: 0;
+    transition: all 400ms;
+    
+}
+
+.container:hover .box{
+    filter: grayscale(100%) opacity(24%);
+}
+
+.box:hover::after{
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 400ms;
+}
+.container .box:hover{
+    filter: grayscale(0%) opacity(100%);
+}
+.container:has(.box-1:hover){
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr; 
+}
+.container:has(.box-2:hover){
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr; 
+}
+.container:has(.box-3:hover){
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr; 
+}
+.container:has(.box-4:hover){
+    grid-template-columns: 1fr 1fr 1fr 3fr 1fr; 
+}
+.container:has(.box-5:hover){
+    grid-template-columns: 1fr 1fr 1fr 1fr 3fr; 
+}
+
+.box:nth-child(odd){
+    transform: translateY(-16px);
+}
+
+.box:nth-child(even){
+    transform: translateY(16px);
+}
