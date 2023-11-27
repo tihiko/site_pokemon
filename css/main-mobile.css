@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/*mobile first*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color:#000000;
+    font-size: 150%;
+    text-transform: uppercase;
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: 900;
+    -webkit-text-stroke-width: 0.1px; 
+    -webkit-text-stroke-color: #ffffff; 
+    text-decoration: none;
+    transition:background-color 400ms;  
+}
+
+body, html{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    background: black url(../img/2.png) no-repeat;
+}
