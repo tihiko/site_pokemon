@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site_Pokemon_APPS</title>
+</head>
+<body>
+    <h1>APPS</h1>
+
+    <ul>    
+        <li><u>Home</u></li>
+        <li><u>Pokedex</u></li>
+        <li><u>Aplicativos</u></li>
+        <li><u>Anime</u></li>
+        <li><u>Jogos</u></li>
+    </ul> 
+
+    <img src="images/2.png" alt="fundo da pag">
+    <img src="images/EN_moe_pc-thumb-1280x458-20342.png" alt="">
+
+    <div>
+        <img src="images/pokemon-go-tour-johto-header.webp" alt="Logotipo do texto1"> 
+        <p>Lorem ipsum dolor sit amet. Et omnis quia et ratione laboriosam sit assumenda pariatur. Eos blanditiis itaque 33 nobis Quis sit omnis dolores. <!-- falta colocar o texto correto -->
+            Non molestias perspiciatis quo eligendi perspiciatis At eveniet omnis et laudantium magnam. Et magnam tempore quo fugit expedita et quia dolorem aut velit illo est optio consequatur.           
+            Sit veniam voluptas non reiciendis earum non placeat officia est natus fuga qui eveniet repellendus et voluptatem quam ut illo dolorem! Ut consequatur dolores non ullam fugit eos tenetur autem?</p>
+    </div>
+    <div>
+        <img src="images/pokemon-unite.webp" alt="logotipo do texto2">
+        <p>Lorem ipsum dolor sit amet. Et omnis quia et ratione laboriosam sit assumenda pariatur. Eos blanditiis itaque 33 nobis Quis sit omnis dolores. <!-- falta colocar o texto correto -->
+            Non molestias perspiciatis quo eligendi perspiciatis At eveniet omnis et laudantium magnam. Et magnam tempore quo fugit expedita et quia dolorem aut velit illo est optio consequatur.           
+            Sit veniam voluptas non reiciendis earum non placeat officia est natus fuga qui eveniet repellendus et voluptatem quam ut illo dolorem! Ut consequatur dolores non ullam fugit eos tenetur autem?</p>
+    </div>
+    <div>
+        <img src="images/pokemon-unite.webp" alt="logotipo do texto3"> <!-- falta colocar a imagem correta -->
+        <p>Lorem ipsum dolor sit amet. Et omnis quia et ratione laboriosam sit assumenda pariatur. Eos blanditiis itaque 33 nobis Quis sit omnis dolores. <!-- falta colocar o texto correto -->
+            Non molestias perspiciatis quo eligendi perspiciatis At eveniet omnis et laudantium magnam. Et magnam tempore quo fugit expedita et quia dolorem aut velit illo est optio consequatur.           
+            Sit veniam voluptas non reiciendis earum non placeat officia est natus fuga qui eveniet repellendus et voluptatem quam ut illo dolorem! Ut consequatur dolores non ullam fugit eos tenetur autem?</p>
+    </div>    
+    <div>
+        <img src="images/how-to-pre-register-pokemon-sleep-android-ios.webp" alt="logotipo do texto4"> 
+        <p>Lorem ipsum dolor sit amet. Et omnis quia et ratione laboriosam sit assumenda pariatur. Eos blanditiis itaque 33 nobis Quis sit omnis dolores. <!-- falta colocar o texto correto -->
+            Non molestias perspiciatis quo eligendi perspiciatis At eveniet omnis et laudantium magnam. Et magnam tempore quo fugit expedita et quia dolorem aut velit illo est optio consequatur.           
+            Sit veniam voluptas non reiciendis earum non placeat officia est natus fuga qui eveniet repellendus et voluptatem quam ut illo dolorem! Ut consequatur dolores non ullam fugit eos tenetur autem?</p>
+    </div>    
+  
+    <li>
+        <ul><p><h4>Projeto desenvolvido por: <a href="https://www.linkedin.com/in/lucas-freire-03b610274/" target="_blank">linkedIn</a></p>
+    </li>
+</body>
+</html>
