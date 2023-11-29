@@ -1,13 +1,5 @@
 @charset "UTF-8";
 
-/*todas as demais mideas*/
-
-/*mideas
-celulares: 600px até 768
-tablet: 768 até 992
-desktop: 992 até 1200
-grandes telas: acima de 1200
-*/
 @media screen and (max-width: 768px) {
     *{
         margin:0 auto;
@@ -52,7 +44,8 @@ grandes telas: acima de 1200
     }
 
     .burguer{
-        background-color: #000000;
+       
+        background-color: #e60000;
         display: block;
         color: #ffffff;
         text-align: center;
