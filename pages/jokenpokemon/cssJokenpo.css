@@ -31,20 +31,17 @@
 
         }
         /* Configuração exclusiva da página jokenpokemon */
-        #pokemon__lista {
-           
-          
+        #pokemon__lista1 {         
             display: flex;
-            margin: 20px auto;
-           
-            overflow: scroll;
-            height: 230px;
+            margin: 20px auto;           
+            height: 310px;
             background-image: linear-gradient(gray, white, gray);
+            overflow:scroll;
         }
         
         .selecionar__personagem{
            
-            height: 100px;
+            height: 250px;
            
             text-align: center;
             padding-top: 15px;
@@ -54,6 +51,7 @@
         }
         .sessao__pagina__jokenpo{
             width: 200vh;
+            /* height: 400px; */
         }
         
         .imgPers {
@@ -69,9 +67,14 @@
             transform: scale(1.2);
         }
         
+        .imgPers img {
+            width: 200px;
+            height: 200px;
+        }
+
         .falas {
            
-            background-size: cover;
+            /* background-size: cover; */
             width: 300px;
             height: 120px;
             border: 1px solid transparent;
@@ -93,7 +96,7 @@
         
         .imagens__jogadores {
             width: 100%;
-            height: 230px;
+            height: 330px;
             border: 1px solid transparent;
             background-image: url("./imgjokenpo/meteoro.gif");
             background-size: cover;
@@ -115,7 +118,7 @@
             color: white;
             position: fixed;
             bottom: 0px;
-            width: 100%;
+            width: 100%; 
             text-align: center;
             display: flex;
             padding: 5px;
@@ -164,7 +167,7 @@
         }
         
         #show__game {
-            /* display: none; */
+            display: none;
             height: auto;
             background-image: linear-gradient(rgb(227, 14, 14), white, rgb(4, 0, 0));
             padding: 10px;
@@ -286,6 +289,20 @@
         }
         
         @media(max-width: 600px) {
+
+            .imagem-de-fundo {
+                width: 100%; 
+                height: 15vh;
+    
+            }
+            .imagem-sobreposta {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 180px;
+                height: 10vh;
+            }
+
             #show__game {
                 /* display: none; */
                 background-image: linear-gradient(rgb(231, 108, 25), white, rgb(240, 14, 14));
@@ -294,7 +311,14 @@
             }
         
             .falas {
-                display: none;
+                width: 100%;
+                height: 50px;
+              
+            }
+            #fala__jogador, #fala__oponente {
+                width: 95%;
+                height: 30px;
+                font-size: 10px;
             }
         
             #retorno__jogador {
@@ -315,17 +339,18 @@
                 height: 100px;
                 margin: auto;
             }
+            #acao__de__jogo {
+                height: 70px;
+            }
         
-            /* #acao__de__jogo {
-                height: 40%;
-            } */
+         
         
-            /* #retorno__aposta {
-                height: 30%;
-            } */
+            #retorno__aposta {
+                height: 70px;
+            }
         
             #pontos__jogadores {
-                height: 20%;
+                height: 50px;
         
             }
         
@@ -339,8 +364,8 @@
 
             }
             .img__aposta {
-                width: 70px;
-                height: 70px;
+                width: 40px;
+                height: 40px;
                 
             }
             .imagens__apostadas {
@@ -348,6 +373,13 @@
                 height: 50px;
               
             }
+
+            .btn__aposta {
+                width: 50px;
+                height: 50px;
+                
+            }
+
             .central{
                 height: auto;
             }
@@ -356,6 +388,9 @@
             }
             .titulo__pokemon{
                 font-size: 20px;
+            }
+            .descricao__rodape{
+                display: none;
             }
         
         }
