@@ -23,7 +23,7 @@ bichinhos.forEach(function (monstrinhos) {
             // console.clear();
             // console.log(data);
 
-            document.getElementById("pokemon__lista").innerHTML +=
+            document.getElementById("pokemon__lista1").innerHTML +=
                 `  
                         <div class="col-md-2 selecionar__personagem">                             
                             
@@ -115,7 +115,7 @@ function escolher(id) {
         
     })          
 
-    var esconder = document.getElementById("pokemon__lista")
+    var esconder = document.getElementById("pokemon__lista1")
     esconder.style.display = "none"
 
     var showGame = document.getElementById("show__game")
@@ -123,7 +123,7 @@ function escolher(id) {
 
 }
 function sairDoJogo(){
-    var esconder = document.getElementById("pokemon__lista")
+    var esconder = document.getElementById("pokemon__lista1")
     esconder.style.display = "flex"
 
     var showGame = document.getElementById("show__game")

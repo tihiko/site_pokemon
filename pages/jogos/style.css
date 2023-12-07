@@ -31,37 +31,38 @@ body {
 
 }
 /* CSS unico da página jogos */
-.tags__de__jogos{
-    width: 90%;
-    padding: 8px;
-    /* display: flex; */
-}
-.img__nome__game{
-    width: 200px;
-    height: 300px;
+
+.todos__jogos{
+    width: 80%;
+    margin: 20px auto;
     border: 1px solid purple;
-    background-color: aliceblue;
-    margin: 15px;
-}
-.img__nome__game a{
-text-decoration: none;
-color: black;
-}
-.img__game{
-width: 200px;
-height: 80%;
-}
-.nome__game{
-    width: 200px;
-    height: 20%;   
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 20px;
 }
-.img__do__jogo{
-    width: 200px;
+
+.selecionar__jogo{
+    width: 500px;
+    height: 350px;
+    border: 1px solid black;
+}
+
+.jogo__imagem{
+    width: 100%;
     height: 100%;
 }
-.titulo__game{
-    font-weight: bold;
+
+
+/* Responsividade */
+
+@media(max-width: 600px){
+
+    .todos__jogos{
+        width: 98%;
+        margin: 10px auto;
+    }
+
+
+
 }

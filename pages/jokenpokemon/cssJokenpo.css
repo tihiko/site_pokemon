@@ -31,20 +31,17 @@
 
         }
         /* Configuração exclusiva da página jokenpokemon */
-        #pokemon__lista {
-           
-          
+        #pokemon__lista1 {         
             display: flex;
-            margin: 20px auto;
-           
-            overflow: scroll;
-            height: 330px;
+            margin: 20px auto;           
+            height: 310px;
             background-image: linear-gradient(gray, white, gray);
+            overflow:scroll;
         }
         
         .selecionar__personagem{
            
-            height: 100px;
+            height: 250px;
            
             text-align: center;
             padding-top: 15px;
