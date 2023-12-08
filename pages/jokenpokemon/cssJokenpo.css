@@ -1,396 +1,450 @@
 /* Configuração padrao das páginas */
 * {
-            margin: 0 auto;
-            padding: 0;
-            box-sizing: 0;
-        }
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: 0;
+}
 
-        body {
-            width: 100vw;
-            height: 100vw;
-            background-image: url("../../img/2.png");
-            background-size: 100%;
-            background-repeat: 2;
-        }
-    
-        .container {
-            position: relative;
-        }
+body {
+    width: 100vw;
+    height: 100vw;
+    background-image: url("../../img/2.png");
+    background-size: 100%;
+    background-repeat: 2;
+}
 
-        .imagem-de-fundo {
-            width: 100%; 
-            height: 30vh;
+.container {
+    position: relative;
+}
 
-        }
+.imagem-de-fundo {
+    width: 100%;
+    height: 30vh;
 
-        .imagem-sobreposta {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            width: 300px;
+}
 
-        }
-        /* Configuração exclusiva da página jokenpokemon */
-        #pokemon__lista1 {         
-            display: flex;
-            margin: 20px auto;           
-            height: 310px;
-            background-image: linear-gradient(gray, white, gray);
-            overflow:scroll;
-        }
-        
-        .selecionar__personagem{
-           
-            height: 250px;
-           
-            text-align: center;
-            padding-top: 15px;
-            border-radius: 15px;
-           
-            
-        }
-        .sessao__pagina__jokenpo{
-            width: 200vh;
-            /* height: 400px; */
-        }
-        
-        .imgPers {
-            border-radius: 20px;
-            border: none;
-            background-color: transparent;
-            box-shadow: 0px 0px 10px gray;
-            transition: all 1s;
-            
-        }
-        
-        .imgPers:hover {
-            transform: scale(1.2);
-        }
-        
-        .imgPers img {
-            width: 200px;
-            height: 200px;
-        }
+.imagem-sobreposta {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 300px;
 
-        .falas {
-           
-            /* background-size: cover; */
-            width: 300px;
-            height: 120px;
-            border: 1px solid transparent;
-            margin: auto;
-        }
-        
-        #fala__jogador,
-        #fala__oponente {
-            width: 85%;
-            height: 85%;
-            border: 1px solid transparent;
-            margin: 15px auto;
-            text-align: center;
-            font-size: 20px;
-            font-weight: bold;
-            box-shadow: 0px 0px 8px black;
-            border-radius: 10%;
-        }
-        
-        .imagens__jogadores {
-            width: 100%;
-            height: 330px;
-            border: 1px solid transparent;
-            background-image: url("./imgjokenpo/meteoro.gif");
-            background-size: cover;
-            background-repeat: no-repeat;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-        
-        #retorno__jogador {
-            transform: rotatey(180deg);
-            width: 250px;
-            animation: upDownJogador 2s infinite;
-        }
-        .rodape{
-            background-color: black;
-            color: white;
-            position: fixed;
-            bottom: 0px;
-            width: 100%; 
-            text-align: center;
-            display: flex;
-            padding: 5px;
-        }
+}
 
-        @keyframes upDownJogador{
+/* Configuração exclusiva da página jokenpokemon */
+#pokemon__lista1 {
+    display: flex;
+    margin: 20px auto;
+    height: 320px;
+    background-image: linear-gradient(gray, white, gray);
+    overflow: scroll;
+}
 
-            0%{
-                margin-top: -10%
-            }
-            50%{
-                margin-top: 10%
-            }
-            100%{
-                margin-top: -10%
-            }
-        }
-        #audio{
-            width: 300px;
-            height: 30px; 
-            /* background-color: aqua; */
-        }
-        #music{
-            width: 300px;
-            height: 30px;
-           
-        }
-        
-        #retorno__oponente {
-            width: 250px;
-            margin: auto;
-            animation: upDownOponente 1s infinite;
-        }
+.selecionar__personagem {
 
-        @keyframes upDownOponente{
+    height: 300px;
+    margin: 0 15px;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 15px;
 
-            0%{
-                margin-top: 10%
-            }
-            50%{
-                margin-top: -10%
-            }
-            100%{
-                margin-top: 10%
-            }
-        }
-        
-        #show__game {
-            display: none;
-            height: auto;
-            background-image: linear-gradient(rgb(227, 14, 14), white, rgb(4, 0, 0));
-            padding: 10px;
-            
-        }
-        .container__jokenpo{
-            width: 100%;
-        }
-        
-        
-        
-        #acao__de__jogo {
-            width: 100%;
-            height: 120px;
-            /* border: 1px solid purple; */
-            margin-top: 10px;
-            border-radius: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            background-image: linear-gradient(gray, white, gray);
-        }
-        
-        #retorno__aposta {
-            width: 100%;
-            height: 90px;
-            /* border: 1px solid purple; */
-            margin-top: 10px;
-            border-radius: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            background-image: linear-gradient(gray, white, gray);
-        }
-        
-        #pontos__jogadores {
-            width: 100%;
-            height: 40px;
-            /* border: 1px solid purple; */
-            margin-top: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 15px;
-            background-image: linear-gradient(gray, white, gray);
-        }
-        
-        #sair__jogo {
-            width: 100%;
-            height: 40px;
-            /* border: 1px solid purple; */
-            margin-top: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 15px;
-            background-image: linear-gradient(gray, white, gray);
-        }
-        
-        .ppt {
-            height: 100%;
-            /* border: 1px solid purple; */
-        }
-        
-        .btn__aposta {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            border: none;
-        }
-        
-        .img__aposta {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-        }
-        
-        .resutados__aposta {
-            width: 100px;
-            height: 100px;
-            /* border: 1px solid purple; */
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .pontos__jogador__oponente {
-            width: 20%;
-            height: 100%;
-            /* border: 1px solid purple; */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .imagens__apostadas {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin: auto;
-        }
-        
-        .botoesA {
-            width: 95%;
-            height: 30px;
-            text-decoration: none;
-            font-size: 20px;
-            color: black;
-            font-weight: bold;
-            text-align: center;
-        }
-        
-        #retorno__pontos__aposta {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        @media(max-width: 600px) {
 
-            .imagem-de-fundo {
-                width: 100%; 
-                height: 15vh;
-    
-            }
-            .imagem-sobreposta {
-                position: absolute;
-                top: 0px;
-                left: 0px;
-                width: 180px;
-                height: 10vh;
-            }
+}
 
-            #show__game {
-                /* display: none; */
-                background-image: linear-gradient(rgb(231, 108, 25), white, rgb(240, 14, 14));
-                padding: 20px 0px;
-                margin-bottom: 60px;
-            }
-        
-            .falas {
-                width: 100%;
-                height: 50px;
-              
-            }
-            #fala__jogador, #fala__oponente {
-                width: 95%;
-                height: 30px;
-                font-size: 10px;
-            }
-        
-            #retorno__jogador {
-                transform: rotatey(180deg);
-                width: 100px;
-            }
-        
-            #retorno__oponente {
-                width: 100px;
-        
-            }
-            .oponente{
-                margin-top: 40px;
-            }
-        
-            .imagens__jogadores {
-                width: 70%;
-                height: 100px;
-                margin: auto;
-            }
-            #acao__de__jogo {
-                height: 70px;
-            }
-        
-         
-        
-            #retorno__aposta {
-                height: 70px;
-            }
-        
-            #pontos__jogadores {
-                height: 50px;
-        
-            }
-        
-            /* #sair__jogo {
+.sessao__pagina__jokenpo {
+    width: 200vh;
+    /* height: 400px; */
+}
+
+.imgPers {
+    border-radius: 20px;
+    border: none;
+    background-color: transparent;
+    box-shadow: 0px 0px 10px gray;
+    transition: all 1s;
+
+}
+
+.imgPers:hover {
+    transform: scale(1.2);
+}
+
+.imgPers img {
+    width: 200px;
+    height: 200px;
+}
+
+.falas {
+
+    /* background-size: cover; */
+    width: 300px;
+    height: 120px;
+    border: 1px solid transparent;
+    margin: auto;
+}
+
+#fala__jogador,
+#fala__oponente {
+    width: 85%;
+    height: 85%;
+    border: 1px solid transparent;
+    margin: 15px auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0px 0px 8px black;
+    border-radius: 10%;
+}
+
+.imagens__jogadores {
+    width: 100%;
+    height: 330px;
+    border: 1px solid transparent;
+    background-image: url("./imgjokenpo/meteoro.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#retorno__jogador {
+    transform: rotatey(180deg);
+    width: 250px;
+    animation: upDownJogador 2s infinite;
+}
+
+.rodape {
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    padding: 5px;
+}
+
+@keyframes upDownJogador {
+
+    0% {
+        margin-top: -10%
+    }
+
+    50% {
+        margin-top: 10%
+    }
+
+    100% {
+        margin-top: -10%
+    }
+}
+
+#audio {
+    width: 300px;
+    height: 30px;
+    /* background-color: aqua; */
+}
+
+#music {
+    width: 300px;
+    height: 30px;
+
+}
+
+#retorno__oponente {
+    width: 250px;
+    margin: auto;
+    animation: upDownOponente 1s infinite;
+}
+
+@keyframes upDownOponente {
+
+    0% {
+        margin-top: 10%
+    }
+
+    50% {
+        margin-top: -10%
+    }
+
+    100% {
+        margin-top: 10%
+    }
+}
+
+#show__game {
+    display: none;
+    height: auto;
+    background-image: linear-gradient(rgb(227, 14, 14), white, rgb(4, 0, 0));
+    padding: 10px;
+
+}
+
+.container__jokenpo {
+    width: 100%;
+}
+
+
+
+#acao__de__jogo {
+    width: 100%;
+    height: 120px;
+    /* border: 1px solid purple; */
+    margin-top: 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(gray, white, gray);
+}
+
+#retorno__aposta {
+    width: 100%;
+    height: 90px;
+    /* border: 1px solid purple; */
+    margin-top: 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(gray, white, gray);
+}
+
+#pontos__jogadores {
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid purple; */
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background-image: linear-gradient(gray, white, gray);
+}
+
+#sair__jogo {
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid purple; */
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background-image: linear-gradient(gray, white, gray);
+}
+
+.ppt {
+    height: 100%;
+    /* border: 1px solid purple; */
+}
+
+.btn__aposta {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+}
+
+.img__aposta {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.resutados__aposta {
+    width: 100px;
+    height: 100px;
+    /* border: 1px solid purple; */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pontos__jogador__oponente {
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid purple; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagens__apostadas {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.botoesA {
+    width: 95%;
+    height: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+#retorno__pontos__aposta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo__pokemon {
+    color: #000000;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: 900;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: #ffffff;
+    text-decoration: none;
+    transition: background-color 400ms;
+}
+#como__jogar{
+    color: #000000;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: 900;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: #ffffff;
+    text-decoration: none;
+    transition: background-color 400ms;
+}
+.api__nome{
+    color: #000000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: 900;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: #ffffff;
+    text-decoration: none;
+    transition: background-color 400ms;
+}
+
+@media(max-width: 600px) {
+
+    .imagem-de-fundo {
+        width: 100%;
+        height: 15vh;
+
+    }
+
+    .imagem-sobreposta {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 180px;
+        height: 10vh;
+    }
+
+    #show__game {
+        /* display: none; */
+        background-image: linear-gradient(rgb(231, 108, 25), white, rgb(240, 14, 14));
+        padding: 20px 0px;
+        margin-bottom: 60px;
+    }
+
+    .falas {
+        width: 100%;
+        height: 50px;
+
+    }
+
+    #fala__jogador,
+    #fala__oponente {
+        width: 95%;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    #retorno__jogador {
+        transform: rotatey(180deg);
+        width: 100px;
+    }
+
+    #retorno__oponente {
+        width: 100px;
+
+    }
+
+    .oponente {
+        margin-top: 40px;
+    }
+
+    .imagens__jogadores {
+        width: 70%;
+        height: 100px;
+        margin: auto;
+    }
+
+    #acao__de__jogo {
+        height: 70px;
+    }
+
+
+
+    #retorno__aposta {
+        height: 70px;
+    }
+
+    #pontos__jogadores {
+        height: 50px;
+
+    }
+
+    /* #sair__jogo {
                 height: 20%;
                 display: none;
             } */
-          
-            .sessao__pagina__jokenpo{
-                width: 45vh;
 
-            }
-            .img__aposta {
-                width: 40px;
-                height: 40px;
-                
-            }
-            .imagens__apostadas {
-                width: 50px;
-                height: 50px;
-              
-            }
+    .sessao__pagina__jokenpo {
+        width: 45vh;
 
-            .btn__aposta {
-                width: 50px;
-                height: 50px;
-                
-            }
+    }
 
-            .central{
-                height: auto;
-            }
-            .rodape{
-                display: block;
-            }
-            .titulo__pokemon{
-                font-size: 20px;
-            }
-            .descricao__rodape{
-                display: none;
-            }
-        
-        }
+    .img__aposta {
+        width: 40px;
+        height: 40px;
+
+    }
+
+    .imagens__apostadas {
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .btn__aposta {
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .central {
+        height: auto;
+    }
+
+    .rodape {
+        display: block;
+    }
+
+    .titulo__pokemon {
+        font-size: 20px;
+    }
+
+    .descricao__rodape {
+        display: none;
+    }
+
+}
