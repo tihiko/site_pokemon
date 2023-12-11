@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-
+    <link rel="stylesheet" href="../../css/main-mobile.css">
     <link rel="stylesheet" type="text/css" href="../../css/main.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,23 +26,32 @@
         </div>
     </header>
 
-    <nav class="menu">
+    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+        menu
+    </span>
+
+    <nav  id="itens" class="menu">
         <ul>
             <li><a href="../../index.html">HOME</a></li>
             <li><a href="../pokedex/pokedex.html">POKEDEX</a></li>
             <li><a href="../aplicativos/aplicativos.html">APLICATIVOS</a></li>
             <li><a href="../animes/animes.html">ANIMES</a></li>
-            <li><a href="../jogos/jogos.html">JOGOS</a></li>   
-        </ul>
-    </nav>
+            <li><a href="../jogos/jogos.html">JOGOS</a></li>              
+           
+         </ul>
+    </nav> 
+
     <!-- li*5>a> -->
     <main class="cards">
         <section class="container">
 
-            <h1>JOGOS</h1>
+            <h1 class="titulo__pagina">Selecione um jogo...</h1>
             <nav class="jogos">
-                <ul>
-                    <li><a href="../jokenpokemon/jokenpokemon.html">Jokenpokemon</a></li>
+                <ul class="todos__jogos" >
+                    <li class="selecionar__jogo"><a href="../jokenpokemon/jokenpokemon.html"><img class="jogo__imagem" src="./imgs/jogo.png" alt=""><span class="titulo__jogo"><p>Jokenpokemon</p></span></a></li>
+                    <!-- <li class="selecionar__jogo"><a href=""></a></li>
+                    <li class="selecionar__jogo"><a href=""></a></li> -->
+          
                 </ul>
             </nav>
 
@@ -50,5 +59,16 @@
     </main>
    
 </body>
+<script>
+    function clickMenu(){
+        if (itens.style.display == 'block'){
+            itens.style.display='none'
+        } else{
+            itens.style.display = 'block'
+        }
+        
+
+    }
+</script>
 
 </html>
