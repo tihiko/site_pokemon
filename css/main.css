@@ -170,33 +170,20 @@ grandes telas: acima de 1200
     }
 
     .box{
+        
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        background-color: #A8A878; /* Cor padrão para tipos desconhecidos */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease; /* Adiciona transição suave para a mudança de cor */
+}
+
+    .box .pokemonImage {
         width: 100%;
-        position: relative;
-        border: 1px solid black;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        background-color: #b30707;
-        transition: all 400ms;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
-
-    .box::after{
-        content: attr(data-text);
-        position: absolute;
-        bottom: 20px;
-        background: #000000;
-        color: #ffffff;
-        
-
-        text-transform: uppercase;
-        transform: translateY(30px);
-        opacity: 0;
-        transition: all 400ms;
-        
-    }
-
+    
     .container-1:hover .box{
         filter: grayscale(100%) opacity(24%);
     }
@@ -313,4 +300,3 @@ grandes telas: acima de 1200
         font-family: "Roboto", sans-serif;
     }
 }
-
