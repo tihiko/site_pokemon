@@ -12,11 +12,9 @@
 }
 
 body {
-    width: 100vw;
-    /* height: 100vw; */
+    width: 100vw;    
     background-image: url("../../img/2.png");
-    background-size: 100%;
-    /* background-repeat: 2; */
+    background-size: 100%;   
 }
 
 
@@ -24,7 +22,6 @@ body {
 .imagem-de-fundo {
     width: 100%;
     height: 15vh;
-
 }
 
 .imagem-sobreposta {
@@ -36,6 +33,31 @@ body {
 }
 
 /* Configuração exclusiva da página jokenpokemon */
+
+/* Configuração do menú */
+.nav-item{
+    list-style: none;
+    text-align: center;
+    font-family: var(--tipo_fonte);
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 22px;
+    -webkit-text-stroke-width: 0.1px; 
+    -webkit-text-stroke-color: #ffffff;
+    color: black;
+    font-weight: bold;
+    transition: text-shadow 1s;
+}
+.nav-link:hover{
+    text-shadow: 0px 0px 12px purple;
+    color: black;
+}
+
+
+
+
 /* Grid inicio */
 #show__game{
     display: none;
@@ -380,6 +402,6 @@ width: 96%;
     }
     .rodape h5{
         display: block;
-    }
-    
+    }    
+   
 }

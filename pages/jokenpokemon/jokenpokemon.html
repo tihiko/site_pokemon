@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  
-<head>
-    <!--Link bootstrap-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/css/bootstrap.css"
-        integrity="sha512-drnvWxqfgcU6sLzAJttJv7LKdjWn0nxWCSbEAtxJ/YYaZMyoNLovG7lPqZRdhgL1gAUfa+V7tbin8y+2llC1cw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="../../css/main-mobile.css">
-    <link rel="stylesheet" type="text/css" href="../../css/main.css">
-    <link rel="stylesheet" href="./cssJokenpo.css">
+<head>
+   
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./cssJokenpo.css">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Site_POKEMON_Jokenpo</title>
- 
+
 </head>
- 
+
 <body>
 
     <header class="header">
@@ -28,24 +28,39 @@
             <img src="../../img/LOGO.png" width="200" alt="Imagem Sobreposta" class="imagem-sobreposta">
         </div>
     </header>
-    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
-        menu
-    </span>
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <nav  id="itens" class="menu">
-        <ul>
-            <li><a href="../../index.html">HOME</a></li>
-            <li><a href="../pokedex/pokedex.html">POKEDEX</a></li>
-            <li><a href="../aplicativos/aplicativos.html">APLICATIVOS</a></li>
-            <li><a href="../animes/animes.html">ANIMES</a></li>
-            <li><a href="../jogos/jogos.html">JOGOS</a></li>   
-           
-           
-         </ul> 
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+       
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
+            <li class="nav-item active">
+                <a class="nav-link" href="../../index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pokedex/pokedex.html">POKEDEX</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../aplicativos/aplicativos.html">APLICATIVOS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../animes/animes.html">ANIMES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../jogos/jogos.html">JOGOS</a>
+            </li>
+
+
+        </ul>
+    </div>
     </nav>
 
 
-    <main >
+    <main>
         <div class="container__jokenpo">
             <section class="sessao__pagina__jokenpo">
                 <h1 class="titulo__pokemon">JOKENPOKEMON</h1>
@@ -127,7 +142,7 @@
             </section>
             <br>
         </div>
-       
+
     </main>
     <footer class="rodape">
 
@@ -138,17 +153,7 @@
 
     </footer>
 
-<script>
-        function clickMenu(){
-            if (itens.style.display == 'block'){
-                itens.style.display='none'
-            } else{
-                itens.style.display = 'block'
-            }
-            
-
-        }
-    </script>
+    
     <script src="./script.js"></script>
 </body>
 
