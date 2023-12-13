@@ -4,11 +4,11 @@
 let url = 'https://pokeapi.co/api/v2/pokemon/';
 
 
-bichinhos = [3, 1000, 4, 15, 19, 31, 444, 59, 5, 6, 930, 25, 26, 33, 77, 150, 133, 483, 614, 652, 663,658,689,675]
+bichinhos = [3, 4, 15, 19, 31, 59, 5, 6, 25, 26, 33, 77, 150, 483, 133, 614, 645, 652, 663,658,689,675]
 
 // console.log(bichinhos.length)
 // inicio foreach 
-bichinhos.forEach(function (monstrinhos) {
+bichinhos.forEach(function (monstrinhos) { 
     // console.log(monstrinhos)
 
     var retorno = url + monstrinhos + "/"
@@ -23,13 +23,13 @@ bichinhos.forEach(function (monstrinhos) {
             // console.clear();
             // console.log(data);
 
-            document.getElementById("pokemon__lista1").innerHTML +=
+            document.getElementById("pokemon__lista").innerHTML +=
                 `  
                         <div class="col-md-2 selecionar__personagem">                             
                             
-                            <button class="imgPers" onclick="escolher('${data['id']}')"><img  src="${data['sprites']['front_default']}" alt="${data['name']}"></button>
+                            <button class="imgPers" onclick="escolher('${data['id']}')"><img  src="${data['sprites']['front_default']}" alt=""></button>
                             <br><br>
-                            <h6 class="api__nome">${data['name'].toUpperCase()} </h6> 
+                            <h6>${data['name'].toUpperCase()} </h6> 
                               <br>
                         </div>                              
                         
@@ -42,7 +42,7 @@ function escolher(id) {
 
     document.getElementById("audio").innerHTML=
     `
-    <audio id="music" controls preload="auto" autoplay>
+    <audio id="music" style="height:30px;" controls preload="auto" autoplay>
     <source src="audio/01 - Pokémon Thema.mp3" type = "audio/mpeg">
     </audio>
     `
@@ -115,25 +115,19 @@ function escolher(id) {
         
     })          
 
-    var esconder = document.getElementById("pokemon__lista1")
+    var esconder = document.getElementById("pokemon__lista")
     esconder.style.display = "none"
 
     var showGame = document.getElementById("show__game")
-    showGame.style.display = "flex"
-
-    var comoJogar = document.getElementById("como__jogar")
-    comoJogar.style.display = "none"
+    showGame.style.display = "grid"
 
 }
 function sairDoJogo(){
-    var esconder = document.getElementById("pokemon__lista1")
+    var esconder = document.getElementById("pokemon__lista")
     esconder.style.display = "flex"
 
     var showGame = document.getElementById("show__game")
     showGame.style.display = "none"
-
-    var comoJogar = document.getElementById("como__jogar")
-    comoJogar.style.display = "block"
 }
 
 
