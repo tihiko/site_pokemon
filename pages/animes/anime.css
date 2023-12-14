@@ -1,0 +1,135 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    
+  }
+  
+  body{
+    width: 100%;
+    height:100%;
+    background-image:url(../../img/2.png);
+    background-size: 100%;
+    background-repeat: 8;
+  }
+  
+  .titulo-anime {
+    font-family: 'Pokemon Solid', sans-serif;
+    color: #fc0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 35%;
+    font-size: 50px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: blue;
+    
+  }
+  
+  .menu .menu-item {
+    color: #fc0;
+    display: inline;
+    text-align: center;
+    font-size: 50px;
+  
+  }
+  .menu a{
+    color: #fc0;
+  }
+  
+  .temporada-atual {
+    font-family: 'Pokemon Solid', sans-serif;
+    color: #fc0;
+    font-size: 100px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: blue;
+  }
+  
+  .image1{
+    text-align: center;
+    border-left: 100px;
+    justify-items: center;
+  }
+
+  .temporada .temporada-item {
+    display: inline;
+    text-align: center;
+    color: blue;
+    font-size: 50px;
+    background-color: #fc0;
+  }
+  
+  .temporada-item:hover {
+    color: aqua;
+    font-size: 70px;
+  }
+  
+  
+  .inicio-serie .paragrafo-inicio {
+    background-color: #fc0;
+    display: inline;
+    text-align: center;
+    color: blue;
+    font-size: 50px;
+    align-items: center;
+    margin-left: 100px;
+   
+  }
+  
+  .config-texto {
+    background-color: rgb(225, 223, 223);
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    align-items: center;
+    margin-left: 90px;
+    margin-right: 90px;
+    align-content: center;
+ }
+
+  .image2 {
+    text-align: center;
+    border-left: 100px;
+    justify-items: center;
+  }
+
+  .image3 {
+    text-align: center;
+    border-left: 100px;
+    justify-items: center;
+  }
+
+  .image4 {
+    text-align: center;
+    border-left: 100px;
+    justify-items: center;
+  }
+
+  .image5 {
+    text-align: center;
+    border-left: 100px;
+    justify-items: center;
+  }
+
+  .image6 {
+    text-align: center;
+    border-left: 100px;
+    justify-items: center;
+  }
+
+  .image7 {
+    text-align: center;
+    border-left: 100px;
+    justify-items: center;
+  }
+
+  .image8 {
+    text-align: center;
+    border-left: 100px;
+    justify-items: center;
+  }
+
+  .image9 {
+    text-align: center;
+    border-left: 100px;
+    justify-items: center;
+  }
