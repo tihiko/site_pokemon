@@ -1,15 +1,16 @@
 /* Configuração padrao das páginas */
-* {
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: 0;
-    
-    -webkit-text-stroke-width: 0.1px; 
-    -webkit-text-stroke-color: #ffffff;
-}
 :root{
     --tipo_fonte:'Luckiest Guy', cursive; 
 }
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--tipo_fonte);
+    -webkit-text-stroke-width: 0.1px; 
+    -webkit-text-stroke-color: #ffffff;
+}
+
 
 body {
     width: 100vw;    
@@ -55,8 +56,18 @@ body {
     color: black;
 }
 
-
-
+/* link modal */
+.link__modal{
+    color: black;
+    text-decoration: none;
+}
+.link__modal:hover{
+    color: black;
+    text-decoration: none;
+}
+.modal-content{
+    background-image: linear-gradient(red, white, gray);
+}
 
 /* Grid inicio */
 #show__game{
