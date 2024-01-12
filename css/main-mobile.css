@@ -43,6 +43,12 @@
         -webkit-text-stroke-color: #ffffff;
     }
 
+
+    
+  
+
+    .navbar-nav li {
+
     .burguer{
        
         background-color: #e60000;
@@ -68,10 +74,74 @@
         color:#000000;
         font-size: 100%;
         text-transform: uppercase;
+
         font-family: 'Luckiest Guy', cursive;
-        font-weight: 900;
         -webkit-text-stroke-width: 0.1px; 
         -webkit-text-stroke-color: #ffffff; 
+
+       
+        transition:background-color 400ms;  
+
+    }
+
+    .navbar-nav a::after{
+        
+        content:"";
+        display: block;
+        height: 7px;
+        
+    }
+
+    .navbar-nav li:nth-child(1) a::after {
+        background-color: #ff6600
+    }
+
+    .navbar-nav li:nth-child(2) a::after {
+        background-color: #0099cc; 
+        
+    }
+
+    .navbar-nav li:nth-child(3) a::after {
+        background-color: #ff3366;
+        
+    }
+
+    .navbar-nav li:nth-child(4) a::after {
+        background-color: #33cc33; 
+        
+    }
+
+    .navbar-nav li:nth-child(5) a::after {
+        background-color: #9933cc; 
+        
+    }
+
+
+    .navbar-nav li:nth-child(1) a:hover {
+        background-color: #ff6600; /* Cor de fundo para o botão HOME quando o mouse está sobre ele */
+        
+    }
+
+    .navbar-nav li:nth-child(2) a:hover {
+        background-color: #0099cc; /* Cor de fundo para o botão POKEDEX quando o mouse está sobre ele */
+        
+    }
+
+    .navbar-nav li:nth-child(3) a:hover {
+        background-color: #ff3366; /* Cor de fundo para o botão APLICATIVOS quando o mouse está sobre ele */
+        
+    }
+
+    .navbar-nav li:nth-child(4) a:hover {
+        background-color: #33cc33; /* Cor de fundo para o botão ANIME quando o mouse está sobre ele */
+        
+    }
+
+    .navbar-nav li:nth-child(5) a:hover {
+        background-color: #9933cc; /* Cor de fundo para o botão JOGOS quando o mouse está sobre ele */
+        
+    }
+
         text-decoration: none;
         background-color: gray;
         transition:background-color 400ms;
@@ -102,6 +172,7 @@
         background-color: #9933cc; /* Cor de fundo para o botão JOGOS quando o mouse está sobre ele */
         
     }
+
     .pokebolaIcon p img{
         width: 25px;
         display: inline-block;
@@ -287,5 +358,9 @@
         color:#000000;
         font-family: "Roboto", sans-serif;
     }
+
 }
+
+}
+
 
