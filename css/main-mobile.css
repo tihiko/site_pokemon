@@ -43,13 +43,42 @@
         -webkit-text-stroke-color: #ffffff;
     }
 
+
     
   
 
     .navbar-nav li {
+
+    .burguer{
+       
+        background-color: #e60000;
+        display: block;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .burguer:hover{
+        background-color: white;
+        color: #000000;    
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu ul li a  {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        color:#000000;
+        font-size: 100%;
+        text-transform: uppercase;
+
         font-family: 'Luckiest Guy', cursive;
         -webkit-text-stroke-width: 0.1px; 
         -webkit-text-stroke-color: #ffffff; 
+
        
         transition:background-color 400ms;  
 
@@ -112,6 +141,38 @@
         background-color: #9933cc; /* Cor de fundo para o botão JOGOS quando o mouse está sobre ele */
         
     }
+
+        text-decoration: none;
+        background-color: gray;
+        transition:background-color 400ms;
+        
+    }
+
+    .menu li:nth-child(1) a:hover {
+        background-color: #ff6600; /* Cor de fundo para o botão HOME quando o mouse está sobre ele */
+        
+    }
+
+    .menu li:nth-child(2) a:hover {
+        background-color: #0099cc; /* Cor de fundo para o botão POKEDEX quando o mouse está sobre ele */
+        
+    }
+
+    .menu li:nth-child(3) a:hover {
+        background-color: #ff3366; /* Cor de fundo para o botão APLICATIVOS quando o mouse está sobre ele */
+        
+    }
+
+    .menu li:nth-child(4) a:hover {
+        background-color: #33cc33; /* Cor de fundo para o botão ANIME quando o mouse está sobre ele */
+        
+    }
+
+    .menu li:nth-child(5) a:hover {
+        background-color: #9933cc; /* Cor de fundo para o botão JOGOS quando o mouse está sobre ele */
+        
+    }
+
     .pokebolaIcon p img{
         width: 25px;
         display: inline-block;
@@ -297,4 +358,9 @@
         color:#000000;
         font-family: "Roboto", sans-serif;
     }
+
 }
+
+}
+
+

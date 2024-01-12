@@ -3,9 +3,11 @@
 <head>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/main-mobile.css">
+
     <link href="./js/script.js">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
@@ -19,6 +21,7 @@
 <body>   
     <header class="header">
         <div class="logo">
+
             <img src="./img/charizardwallmult.png" width="100%" alt="Imagem de Fundo" class="imagem-de-fundo">
             <img src="./img/LOGO.png" width=100% alt="Imagem Sobreposta" class="imagem-sobreposta">
         </div>
@@ -89,6 +92,51 @@
                 </div>
                 
                 
+
+            <img src="./img/charizardwall1.png" width="100%" alt="Imagem de Fundo" class="imagem-de-fundo">
+            <img src="./img/LOGO.png" width=100% alt="Imagem Sobreposta" class="imagem-sobreposta">
+        </div>
+    </header>
+    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+        menu
+    </span>
+    <nav id="itens" class="menu" >
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">POKEDEX</a></li>
+            <li><a href="">APPS</a></li>
+            <li><a href="">ANIMES</a></li>
+            <li><a href="">JOGOS</a></li>   
+        </ul>
+    </nav>
+    
+    <main>
+        <Article>
+            <div class="pokebolaIcon" >
+                <h2> <p><img src="./img/pokeball-logo.png"> POKEMONS DESTAQUES</p></h2>
+            </div>
+            <div class="container-1">
+                <div class="box box-1" data-text="Bulbasaur">
+                    <img src="./img/001.png" width="100%">
+                </div>
+
+                <div class="box box-2" data-text="Bulbasaur">
+                    <img src="./img/002.png" width="100%">
+                </div>
+
+                <div class="box box-3" data-text="Bulbasaur">
+                    <img src="./img/003.png" width="100%">
+                </div>
+
+                <div class="box box-4" data-text="Bulbasaur">
+                    <img src="./img/004.png" width="100%">
+                </div>
+                
+                <div class="box box-5" data-text="Bulbasaur">
+                    <img src="./img/006.png" width="100%">
+                </div>
+                
+
             </div>
         </Article>
 
@@ -118,12 +166,90 @@
             <img src="./img/imggame.png">
         </article>
 
+
         
 
     </main>
    
 
     
+
+
+
+
+    </main>
+    <script>
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display='none'
+            } else{
+                itens.style.display = 'block'
+            }
+            
+
+        }
+    </script>
+
+    <script>
+        const urlApi = 'https://pokeapi.co/api/v2/pokemon';
+        const randomId = () => Math.floor(Math.random*905)
+        const getPokemon = () =>
+
+        fetch(`${urlApi}/${randomId()}`)
+            .then(response => response,json())
+            .then(pokemon => {
+                const pokemonSelectedv={
+                    image: pokemon.sprites.otherdream_world.front_default,
+
+                }
+            })
+
+    </script>
+
+    <footer class="desenvolvedores">
+        <div class="dev">
+            <img src="./img/usuario.png">
+            <h3>DEV 1 
+                LINKEDIN
+            </h3>
+        </div>
+        <div class="dev">
+            <img src="./img/usuario.png">
+            <h3>DEV 1 
+                LINKEDIN
+            </h3>
+        </div>
+        <div class="dev">
+            <img src="./img/usuario.png">
+            <h3>DEV 1 
+                LINKEDIN
+            </h3>
+        </div>
+        <div class="dev">
+            <img src="./img/usuario.png">
+            <h3>DEV 1 
+                LINKEDIN
+            </h3>
+        </div>
+        <div class="dev">
+            <img src="./img/usuario.png">
+            <h3>DEV 1 
+                LINKEDIN
+            </h3>
+        </div>
+        <div class="dev">
+            <img src="./img/usuario.png">
+            <h3>DEV 1 
+                LINKEDIN
+            </h3>
+        </div>
+        
+    </footer>
+
+
+</body>
+</html>
+
 
     <footer class="desenvolvedores">
         <div class="dev">
