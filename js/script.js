@@ -13,7 +13,7 @@ async function getRandomPokemon(cardId) {
     const name = card.querySelector('.pokemonName');
     const type = card.querySelector('.pokemonType');
 
-    const randomNumber = Math.floor(Math.random() * 898) + 1; // There are 898 Pokémon in total
+    const randomNumber = Math.floor(Math.random() * 905) + 1; // There are 898 Pokémon in total
     const apiUrl = `https://pokeapi.co/api/v2/pokemon/${randomNumber}/`;
 
     try {
