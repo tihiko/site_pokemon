@@ -36,7 +36,7 @@ function displayPokemon(card, pokemon) {
     type.textContent = `Type: ${pokemon.types.map(type => type.type.name).join(', ')}`;
 
     // Adiciona o nome do Pokémon ao atributo data-text
-    card.setAttribute('data-text', pokemon.name);
+    card.setAttribute('data-text', pokemon.types[0].type.name);
 
     // Remove todas as classes de tipo existentes
     card.classList.remove('grass', 'fire', 'water'); // Adicione mais classes conforme necessário

@@ -7,22 +7,15 @@ tablet: 768 até 992
 desktop: 992 até 1200
 grandes telas: acima de 1200
 */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 400px) {
     
-    *{
-        margin:0 auto;
-        padding:0;
-        box-sizing: 0;   
-    }
     body{
         width: 100%;
         height:100%;
         background-image:url("../img/2.png");
         background-size: 100%;
-        background-repeat: 8;
+       
     }
-    
-
     .header {
         position: relative;
     }
@@ -40,86 +33,71 @@ grandes telas: acima de 1200
         left: 0px;
         width: 35%;
     }
-    .menu {
-        position: flex; 
-        width: 100%;
-    }
-
-    .menu ul { 
-        text-align:center; 
-    }
-
-
-    .menu ul li {
-        display: inline-block;
-        margin-left: 20px;
-    }
-
-    .menu ul li a {
-        color:#000000;
-        font-size: 150%;
-        text-transform: uppercase;
+    
+   
+    .navbar-nav li {
         font-family: 'Luckiest Guy', cursive;
-        font-weight: 900;
         -webkit-text-stroke-width: 0.1px; 
         -webkit-text-stroke-color: #ffffff; 
-        text-decoration: none;
+       
         transition:background-color 400ms;  
+
     }
 
-    .menu a::after{
+    .navbar-nav a::after{
+        
         content:"";
         display: block;
         height: 7px;
         
     }
 
-    .menu li:nth-child(1) a::after {
+    .navbar-nav li:nth-child(1) a::after {
         background-color: #ff6600
     }
 
-    .menu li:nth-child(2) a::after {
+    .navbar-nav li:nth-child(2) a::after {
         background-color: #0099cc; 
         
     }
 
-    .menu li:nth-child(3) a::after {
+    .navbar-nav li:nth-child(3) a::after {
         background-color: #ff3366;
         
     }
 
-    .menu li:nth-child(4) a::after {
+    .navbar-nav li:nth-child(4) a::after {
         background-color: #33cc33; 
         
     }
 
-    .menu li:nth-child(5) a::after {
+    .navbar-nav li:nth-child(5) a::after {
         background-color: #9933cc; 
         
     }
 
 
-    .menu li:nth-child(1) a:hover {
+    .navbar-nav li:nth-child(1) a:hover {
         background-color: #ff6600; /* Cor de fundo para o botão HOME quando o mouse está sobre ele */
         
     }
 
-    .menu li:nth-child(2) a:hover {
+    .navbar-nav li:nth-child(2) a:hover {
         background-color: #0099cc; /* Cor de fundo para o botão POKEDEX quando o mouse está sobre ele */
         
     }
 
-    .menu li:nth-child(3) a:hover {
+    .navbar-nav li:nth-child(3) a:hover {
         background-color: #ff3366; /* Cor de fundo para o botão APLICATIVOS quando o mouse está sobre ele */
         
     }
 
-    .menu li:nth-child(4) a:hover {
+    .navbar-nav li:nth-child(4) a:hover {
         background-color: #33cc33; /* Cor de fundo para o botão ANIME quando o mouse está sobre ele */
         
     }
 
-    .menu li:nth-child(5) a:hover {
+    .navbar-nav li:nth-child(5) a:hover {
         background-color: #9933cc; /* Cor de fundo para o botão JOGOS quando o mouse está sobre ele */
         
     }
@@ -127,7 +105,6 @@ grandes telas: acima de 1200
     .pokebolaIcon p img { 
         width: 30px;
     }
-
     .pokebolaIcon p{
         font-size: 100%;
         margin-right: 30px;
@@ -136,8 +113,9 @@ grandes telas: acima de 1200
         font-family: 'Luckiest Guy', cursive;
         -webkit-text-stroke-width: 0.1px; 
         -webkit-text-stroke-color: #ffffff;
-    }
 
+
+    }
     .container-1 {
         margin-top: 30px;
         display: flex;
@@ -149,11 +127,13 @@ grandes telas: acima de 1200
         flex-direction: row;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        width: 99%;
+        width: 100%;
+        
         font-family: "Roboto", sans-serif;
         transition: all 400ms;
         border: 1px solid black;
         background-color: #545454;
+        
     }
 
     .box{
@@ -166,11 +146,25 @@ grandes telas: acima de 1200
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         transition: background-color 0.3s ease; /* Adiciona transição suave para a mudança de cor */
 }
+    .box img{
+        width: 150px;
+  }
 
-    .box .pokemonImage {
-        width: 100%;
+    .box::after{
+        content: attr(data-text);
+        position: absolute;
+        bottom: 20px;
+        background: #000000;
+        color: #ffffff;
+        
+
+        text-transform: uppercase;
+        transform: translateY(30px);
+        opacity: 0;
+        transition: all 400ms;
+        
     }
-    
+
     .container-1:hover .box{
         filter: grayscale(100%) opacity(24%);
     }
@@ -180,27 +174,21 @@ grandes telas: acima de 1200
         opacity: 1;
         transition-delay: 400ms;
     }
-
     .container-1 .box:hover{
         filter: grayscale(0%) opacity(100%);
     }
-
     .container-1:has(.box-1:hover){
         grid-template-columns: 3fr 1fr 1fr 1fr 1fr; 
     }
-
     .container-1:has(.box-2:hover){
         grid-template-columns: 1fr 3fr 1fr 1fr 1fr; 
     }
-
     .container-1:has(.box-3:hover){
         grid-template-columns: 1fr 1fr 3fr 1fr 1fr; 
     }
-
     .container-1:has(.box-4:hover){
         grid-template-columns: 1fr 1fr 1fr 3fr 1fr; 
     }
-
     .container-1:has(.box-5:hover){
         grid-template-columns: 1fr 1fr 1fr 1fr 3fr; 
     }
@@ -219,7 +207,6 @@ grandes telas: acima de 1200
         margin-top: 40px;
         width: 100%;
     }
-
     .outros_menus{
         
         display: grid;
@@ -241,12 +228,10 @@ grandes telas: acima de 1200
         border: 1px solid black;
         background-color: #545454;
     }
-
     .ANIMES img{
         
         width: 100%;
     }
-
     .ANIMES{
         width: 100%;
         color:#000000;
@@ -254,7 +239,6 @@ grandes telas: acima de 1200
         border: 1px solid black;
         background-color: #545454;
     }
-
     .game header{
         font-size: 100%;
         margin-right: 30px;
@@ -265,7 +249,6 @@ grandes telas: acima de 1200
         -webkit-text-stroke-color: #ffffff;
 
     }
-
     .game img{
         margin-top: 10px;
         width: 100%;
@@ -280,7 +263,6 @@ grandes telas: acima de 1200
         "dev dev dev"
         "dev dev dev";
     }
-
     .dev{
         margin-top: 10px;
         width: 90%;
@@ -288,14 +270,12 @@ grandes telas: acima de 1200
         background-color: #0099cc;
         border: 1px solid black;
     }
-
     .desenvolvedores img{
         margin-top: 10px;
         width: 10%;
         display: flex;
         justify-content: center;
     }
-
     .desenvolvedores h3{
         color:#000000;
         font-family: "Roboto", sans-serif;
