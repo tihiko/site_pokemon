@@ -93,8 +93,8 @@ function escolher(id) {
     }
 
     var oponentes = url + idOponente + "/"
-    console.clear()
-    console.log(oponentes)
+    // console.clear()
+    // console.log(oponentes)
     fetch(oponentes)
     .then((retornarOponente) =>{
         return retornarOponente.json()
@@ -316,6 +316,13 @@ function apostar(retornoAposta) {
                 `  
             Na proxima não serár tão fácil...    `
 
+            Swal.fire({
+                icon: "success",
+                title: "Muito bem...",
+                text: "Você venceu por " + ptsJogador + " a " + ptsOponente,
+                
+              });
+
         } else if (ptsOponente == limite) {
             document.getElementById("fala__jogador").innerHTML =
                 ` Reconheço a derrota. Mas nos veremos em outra partida 
@@ -326,6 +333,13 @@ function apostar(retornoAposta) {
 
             document.getElementById("fala__oponente").innerHTML =
                 `Te venci por ${ptsOponente} a ${ptsJogador}. Bom que reconhece quem é o mestre   `
+
+                Swal.fire({
+                    icon: "error",
+                    title: "Foi mal mas...",
+                    text: "Você perdeu de " + ptsOponente + " a " + ptsJogador,
+                    
+                  });
 
         }
         acaoDoJogo.innerHTML = `<h2><center>O jogo está terminado</center><h2> `
