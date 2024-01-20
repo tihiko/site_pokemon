@@ -134,11 +134,16 @@ width: 96%;
     background-color: transparent;
     box-shadow: 0px 0px 10px gray;
     transition: all 1s;
+    
 
 }
 
 .imgPers:hover {
     transform: scale(1.2);
+}
+
+.imgPers img {
+border-radius: 15px;
 }
 
 
