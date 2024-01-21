@@ -13,6 +13,8 @@ body {
     background-repeat: 2;
 }
 
+
+
 .container {
     position: relative;
 }
@@ -33,12 +35,13 @@ body {
 /* particular da página */
 .pokedex{
     width: 700px;
-    height: 550px;
+    height: 570px;
     border: 2px solid black;
     display: flex;
     padding: 15px;
     background-color: white;
     border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 .pokedex__esquerdo ,
@@ -54,27 +57,34 @@ body {
 }
 #id__nome__pokemon{
     width: 230px;
-    height: 70px;
+    height: 80px;
     position: absolute;
-    left: 50px;
-    top: 180px;
+    left: 45px;
+    top: 175px;
     border: none;
     border-radius: 5px;
     font-size: 25px;
     text-align: center;
 }
-#img__pokemon{
-    width: 203px;
-    height: 160px;
+#img__pokemon{ 
+    width: 213px;
+    height: 170px;
     position: absolute;
-    top: 165px;
-    left: 56px;
+    top: 160px;
+    left: 44px;
     /* border: 1px solid black; */
+   
+}
+.titulo__pokemon{
+    font-family: var(--tipo_fonte);
 }
 .img__pokemonn{
     width: 100%;
     height: 100%; 
-    transition: all 2s;   
+    transition: all 2s; 
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px red;  
+    
 }
 .btn__acao__1{
     width: 130px;
@@ -132,6 +142,7 @@ body {
     background-color: white;
     font-size: 12px;
     font-weight: bold;
+    line-height: 12px;
 }
 #texto__id{
     position: absolute;

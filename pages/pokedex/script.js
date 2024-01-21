@@ -43,6 +43,58 @@
                         console.clear();
                         console.log(data);
 
+                        //Switch que define a cor de fundo de cada card
+            switch (data['types'][0]['type']['name']) {
+                case "fire":
+                    fundo = "orange"
+                    break;
+                case "normal":
+                    fundo = "white"
+                    break;
+                case "poison":
+                    fundo = "black"
+                    break;
+                case "electric":
+                    fundo = "gray"
+                    break;
+                case "grass":
+                    fundo = "green"
+                    break;
+                case "psychic":
+                    fundo = "tomato"
+                    break;
+                case "ice":
+                    fundo = "aquamarine"
+                    break;
+                case "bug":
+                    fundo = "burlywood"
+                    break;
+                case "steel":
+                    fundo = "darkslategrey"
+                    break;
+                case "fighting":
+                    fundo = "blueviolet"
+                    break;
+                case "rock":
+                    fundo = "lawngreen"
+                    break;
+                case "ground":
+                    fundo = "brown"
+                    break;
+                case "water":
+                    fundo = "aqua"
+                    break;
+                    case "fairy":
+                    fundo = "lightgreen"
+                    break;
+
+                default:
+                    fundo = "white"
+                    break;
+            }
+
+
+
                         img = data['sprites'][front__rew];
 
                         document.getElementById("poderes").innerHTML =
@@ -51,12 +103,13 @@
                         Peso: ${data['weight']}<br>
                         Habilidade 1: ${data['abilities']['0']['ability']['name'].toUpperCase()}<br>
                         Habilidade 2: ${data['abilities']['1']['ability']['name'].toUpperCase()}<br>
+                        Tipo: ${data['types'][0]['type']['name']}
                         `                       
-                         
+                          
                          
                         document.getElementById("img__pokemon").innerHTML=
                         `
-                        <img class="img__pokemonn" src="${img}" alt="${data['name']}"></img>
+                        <img style="background-color: ${fundo};" class="img__pokemonn" src="${img}" alt="${data['name']}"></img>
                         
                         `
                         document.getElementById("retorna__nome").innerHTML = data['name'].toUpperCase()
