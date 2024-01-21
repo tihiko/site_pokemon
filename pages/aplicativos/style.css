@@ -30,3 +30,30 @@ body {
     width: 300px;
 
 }
+/* Particular da página */
+.all__images{
+    width: 100%;
+    margin: auto;
+}
+.descricoes{
+    width: 100%;
+    background-color: beige;
+    margin: 10px auto;
+    text-indent: 30px;
+    padding: 10px 5px;
+}
+
+@media (min-width: 800px) {
+    .all__images{
+        width: 100%;
+        margin: auto;
+    }
+    .descricoes{
+        width: 100%;
+       
+    }  
+    .img__content{
+        width: 90%;
+        margin: auto;
+    }
+}
