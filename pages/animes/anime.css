@@ -26,6 +26,12 @@ body{
   border-radius: 40px;
   position: relative;
 }
+.titulo__aberturas{
+  position: absolute;
+  top: 17px;
+  left: 60px;
+  
+}
 .iframe__video{
   position: absolute;
   left: 60px;
