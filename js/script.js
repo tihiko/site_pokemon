@@ -27,6 +27,8 @@ async function getRandomPokemon(cardId) {
 }
 
 function displayPokemon(card, pokemon) {
+
+    
     const image = card.querySelector('.pokemonImage');
     const name = card.querySelector('.pokemonName');
     const type = card.querySelector('.pokemonType');

@@ -1,7 +1,7 @@
 
 
 //URL da API
-let url = 'https://pokeapi.co/api/v2/pokemon/';
+let url = 'https://pokeapi.co/api/v2/pokemon/'; 
 
 
 bichinhos = [3, 4, 15, 19, 31, 59, 5, 6, 25, 26, 33, 77, 150, 483, 133, 614, 645, 652, 663,658,689,675]
@@ -22,8 +22,8 @@ bichinhos.forEach(function (monstrinhos) {
         //them entra mais um nível do objeto e atribui a variável 'data'
         .then((data) => {
             // console.clear();
-            console.log(data);
-            console.log(data['types'][0]['type']['name']);
+            // console.log(data);
+            // console.log(data['types'][0]['type']['name']);
             //Switch que define a cor de fundo de cada card
             switch (data['types'][0]['type']['name']) {
                 case "fire":
@@ -70,15 +70,15 @@ bichinhos.forEach(function (monstrinhos) {
                     fundo = "white"
                     break;
             }
-            "rock"
+            
 
             document.getElementById("pokemon__lista").innerHTML +=
                 `  
                 
-                        <div class="col-md-2 selecionar__personagem" >                             
+                        <div class="selecionar__personagem" >                             
                             
                             <button class="imgPers" onclick="escolher('${data['id']}')"> 
-                            <img  src="${data['sprites']['front_default']}" alt=""style="background-color: ${fundo};">
+                            <img class="pokemons__return" src="${data['sprites']['other']['official-artwork']['front_default']}" alt=""style="background-color: ${fundo};">
                             </button>
                             <br><br>
                             <h6>${data['name'].toUpperCase()} </h6> 
@@ -109,7 +109,7 @@ function escolher(id) {
 
             document.getElementById("imagem__jogador").innerHTML =
                 `
-        <img id="retorno__jogador" src="${dataJogador['sprites']['front_default']}" alt="${dataJogador['name']}">
+        <img id="retorno__jogador" src="${dataJogador['sprites']['other']['official-artwork']['front_default']}" alt="${dataJogador['name']}">
         
         `
 
@@ -155,7 +155,7 @@ function escolher(id) {
 
             document.getElementById("imagem__oponente").innerHTML =
                 `
-        <img id="retorno__oponente" src="${dataOponente['sprites']['front_default']}" alt="${dataOponente['name']}">
+        <img id="retorno__oponente" src="${dataOponente['sprites']['other']['official-artwork']['front_default']}" alt="${dataOponente['name']}">
                       
         
         `

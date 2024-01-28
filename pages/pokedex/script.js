@@ -6,7 +6,7 @@
                 front__rew = "front_default"
             }                
             else if(frente__costas == "costas"){
-                front__rew = "back_default"
+                front__rew = "front_shiny"
             }
                 
             
@@ -95,7 +95,7 @@
 
 
 
-                        img = data['sprites'][front__rew];
+                        img = data['sprites']['other']['official-artwork']['front_default'];
 
                         document.getElementById("poderes").innerHTML =
                         `                     

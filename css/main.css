@@ -1,5 +1,25 @@
 @charset "UTF-8";
 
+.container__devs{
+    display: block;
+
+}
+.container__devs section{
+    width: 100%;
+    background-color: rgb(238, 0, 255);
+    min-height: 70vh;
+    padding: 30px;
+}
+.container__devs article{
+    width: 100%;
+    background-color:gold;
+    padding: 20px;
+}
+.inform__devs{
+    line-height: 7px;
+   border-bottom: 4px solid purple;
+   margin-top: 15px;
+}
 
 /*mideas
 celulares: 600px até 768
@@ -7,7 +27,7 @@ tablet: 768 até 992
 desktop: 992 até 1200
 grandes telas: acima de 1200
 */
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 600px) {
     
     body{
         width: 100%;
@@ -125,7 +145,7 @@ grandes telas: acima de 1200
         align-items: center;
         align-content: space-around;
         gap: 10px;
-        overflow: visible;
+        overflow: hidden;
         flex-direction: row;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -255,8 +275,17 @@ grandes telas: acima de 1200
         margin-top: 10px;
         width: 100%;
     }
-
     .desenvolvedores{
+        background-color: #000000;
+        padding: 20px;
+    }
+    .desenvolvedores a{
+        color: aliceblue;
+        text-decoration: none;
+        font-size: 22px;
+    }
+
+    /* .desenvolvedores{
         background-color: #545454;
         border: 1px solid black;
         margin-top: 30px;
@@ -281,5 +310,37 @@ grandes telas: acima de 1200
     .desenvolvedores h3{
         color:#000000;
         font-family: "Roboto", sans-serif;
+    } */
+    /* Página devs */
+    .container__devs{
+        display: flex;
+    
+    }
+    .container__devs section{
+        width: 65%;
+        background-color: rgb(238, 0, 255);
+        min-height: 70vh;
+        padding: 30px;
+    }
+    .container__devs article{
+        width: 35%;
+        background-color:gold;
+        padding: 20px;
+    }
+    .inform__devs{
+        line-height: 7px;
+       border-bottom: 4px solid purple;
+       margin-top: 15px;
+       /* font-size: 25px; */
+       color: #000000;
+    }
+    .inform__devs p a{
+        text-decoration: none;
+        color: black;
+
+    }
+    .devs{
+        text-indent: 30px;
     }
 }
+
