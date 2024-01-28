@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 .container__devs{
     display: block;
 
@@ -145,7 +146,7 @@ grandes telas: acima de 1200
         align-items: center;
         align-content: space-around;
         gap: 10px;
-        overflow: hidden;
+        overflow: visible;
         flex-direction: row;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -310,37 +311,5 @@ grandes telas: acima de 1200
     .desenvolvedores h3{
         color:#000000;
         font-family: "Roboto", sans-serif;
-    } */
-    /* Página devs */
-    .container__devs{
-        display: flex;
-    
-    }
-    .container__devs section{
-        width: 65%;
-        background-color: rgb(238, 0, 255);
-        min-height: 70vh;
-        padding: 30px;
-    }
-    .container__devs article{
-        width: 35%;
-        background-color:gold;
-        padding: 20px;
-    }
-    .inform__devs{
-        line-height: 7px;
-       border-bottom: 4px solid purple;
-       margin-top: 15px;
-       /* font-size: 25px; */
-       color: #000000;
-    }
-    .inform__devs p a{
-        text-decoration: none;
-        color: black;
-
-    }
-    .devs{
-        text-indent: 30px;
     }
 }
-
