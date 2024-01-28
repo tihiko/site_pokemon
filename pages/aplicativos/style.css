@@ -40,7 +40,17 @@ body {
     background-color: beige;
     margin: 10px auto;
     text-indent: 30px;
-    padding: 10px 5px;
+    padding: 10px 20px;
+    font-size: 22px;
+}
+.titulo__apps{
+    text-align: center;
+}
+.subtitulo__apps{
+    text-align: center;
+    background-color: aliceblue;
+    width: 80%;
+    padding: 6px;
 }
 
 @media (min-width: 800px) {
