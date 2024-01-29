@@ -1,12 +1,9 @@
 /* Configuração padrao das páginas */
-:root{
-    --tipo_fonte:'Luckiest Guy', cursive; 
-}
+
 * {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--tipo_fonte);
     -webkit-text-stroke-width: 0.1px; 
     -webkit-text-stroke-color: #ffffff;
 }
@@ -35,22 +32,8 @@ body {
 
 /* Configuração exclusiva da página jokenpokemon */
 
-/* Configuração do menú */
-.nav-item{
-    list-style: none;
-    text-align: center;
-    font-family: var(--tipo_fonte);
-}
 
-.nav-link{
-    text-decoration: none;
-    font-size: 22px;
-    -webkit-text-stroke-width: 0.1px; 
-    -webkit-text-stroke-color: #ffffff;
-    color: black;
-    font-weight: bold;
-    transition: text-shadow 1s;
-}
+
 .nav-link:hover{
     text-shadow: 0px 0px 12px purple;
     color: black;
@@ -256,8 +239,8 @@ border-radius: 15px;
     justify-content: center;
 }
 #retorno__jogador{
-    width: 190px;
-    height: 190px;
+    width: 150px;
+    height: 150px;
     transform: rotateY(180deg);
     animation: upDownJogador 2s infinite;
 }
@@ -276,8 +259,8 @@ border-radius: 15px;
     }
 }
 #retorno__oponente{
-    width: 190px;
-    height: 190px;
+    width: 150px;
+    height: 150px;
     animation: upDownOponente 1.5s infinite; 
 }
 @keyframes upDownOponente {

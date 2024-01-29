@@ -1,14 +1,10 @@
 
        
-        function loadpk(frente__costas) {
+        function loadpk(normalGif) {
 
-            if(frente__costas == "frente"){
-                front__rew = "front_default"
-            }                
-            else if(frente__costas == "costas"){
-                front__rew = "front_shiny"
-            }
-                
+          
+               
+            
             
             //imput que vem o número do id
              id = document.getElementById("id__nome__pokemon")
@@ -40,7 +36,7 @@
                     })
 
                     .then((data) => {
-                        console.clear();
+                        // console.clear();
                         console.log(data);
 
                         //Switch que define a cor de fundo de cada card
@@ -93,24 +89,29 @@
                     break;
             }
 
+            if(normalGif == "normal"){
+                tipoImg = data['sprites']['other']['official-artwork']['front_default']
+            }                
+            else if(normalGif == "gif"){
+                tipoImg = data['sprites']['other']['showdown']['front_default']
+            }
 
-
-                        img = data['sprites']['other']['official-artwork']['front_default'];
+                        
 
                         document.getElementById("poderes").innerHTML =
                         `                     
                         Tamanho: ${data['height']}<br>
                         Peso: ${data['weight']}<br>
                         Habilidade 1: ${data['abilities']['0']['ability']['name'].toUpperCase()}<br>
-                        Habilidade 2: ${data['abilities']['1']['ability']['name'].toUpperCase()}<br>
+                       
                         Tipo: ${data['types'][0]['type']['name']}
                         `                       
-                          
+                         //   Habilidade 2: ${data['abilities']['1']['ability']['name'].toUpperCase()}<br>
                          
                         document.getElementById("img__pokemon").innerHTML=
                         `
-                        <img style="background-color: ${fundo};" class="img__pokemonn" src="${img}" alt="${data['name']}"></img>
-                        
+                        <img style="background-color: ${fundo};" class="img__pokemonn" src="${tipoImg}" alt="${data['name']}"></img>
+                      
                         `
                         document.getElementById("retorna__nome").innerHTML = data['name'].toUpperCase()
 

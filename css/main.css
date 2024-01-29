@@ -15,6 +15,7 @@
     width: 100%;
     background-color:gold;
     padding: 20px;
+    text-indent: 20px;
 }
 .inform__devs{
     line-height: 7px;
@@ -286,7 +287,7 @@ grandes telas: acima de 1200
         font-size: 22px;
     }
 
-    /* .desenvolvedores{
+    .desenvolvedores{
         background-color: #545454;
         border: 1px solid black;
         margin-top: 30px;
@@ -312,4 +313,33 @@ grandes telas: acima de 1200
         color:#000000;
         font-family: "Roboto", sans-serif;
     }
+    /* Pagina desenvolvedores */
+
+    .container__devs{
+        display: flex;
+    
+    }
+    .container__devs section{
+        width: 65%;
+        background-color: rgb(233, 93, 243);
+        min-height: 70vh;
+        padding: 30px;
+    }
+    .container__devs article{
+        width: 35%;
+        background-color:gold;
+        padding: 20px;
+        color: #000000;
+       font-size: 20px;
+       
+    }
+    .inform__devs{
+        line-height: 7px;
+       border-bottom: 4px solid purple;
+       margin-top: 15px;
+       color: #000000;
+       font-size: 20px;
+    }
+    
+
 }

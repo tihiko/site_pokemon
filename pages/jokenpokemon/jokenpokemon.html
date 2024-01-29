@@ -13,11 +13,19 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   
+   
+   
+   
+   
+   
+   
     <!-- Link SweetAlert abaixo -->
     <link href=" https://cdn.jsdelivr.net/npm/sweetalert2@11.10.3/dist/sweetalert2.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="./cssJokenpo.css">
     <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/main-mobile.css">
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,40 +45,33 @@
    
     <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid ">
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <ul class="collapse navbar-collapse d-flex justify-content-evenly" id="navbarNavAltMarkup">
-            <div class="navbar-nav ">
-              <li class="nav-iten h2"><a class="nav-link active" aria-current="page" href="../../index.html">HOME</a></li>
-              <li class="nav-iten h2"><a class="nav-link" href="../pokedex/pokedex.html">POKEDEX</a></li>
-              <li class="nav-iten h2"><a class="nav-link" href="../aplicativos/aplicativos.html">APPS</a></li>
-              <li class="nav-iten h2"><a class="nav-link" href="../animes/animes.html">ANIMES</a></li>
-              <li class="nav-iten h2"><a class="nav-link" href="../jogos/jogos.html">JOGOS</a></li>
 
-            </div>
-            
-        </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <div class="navbar-nav ">
+                    <li class="nav-iten h2"><a class="nav-link active" aria-current="page"
+                            href="../../index.html">HOME</a></li>
+                    <li class="nav-iten h2"><a class="nav-link" href="../pokedex/pokedex.html">POKEDEX</a></li>
+                    <li class="nav-iten h2"><a class="nav-link" href="../aplicativos/aplicativos.html">APPS</a></li>
+                    <li class="nav-iten h2"><a class="nav-link" href="../animes/animes.html">ANIMES</a></li>
+                    <li class="nav-iten h2"><a class="nav-link" href="../jogos/jogos.html">JOGOS</a></li>
+
+                </div>
+
+            </ul>
         </div>
-      </nav>
+    </nav> 
    
-    <!-- <nav id="itens" class="menu" >
-        <ul>
-            <li><a href="../../index.html">HOME</a></li>
-            <li><a href="../pokedex/pokedex.html">POKEDEX</a></li>
-            <li><a href="../aplicativos/aplicativos.html">APPS</a></li>
-            <li><a href="../animes/animes.html">ANIMES</a></li>
-            <li><a href="../jogos/jogos.html">JOGOS</a></li>   
-        </ul>
-    </nav> -->
-
+   
 
     <main>
         <div class="container__jokenpo">
             <section class="sessao__pagina__jokenpo">
                 <h1 class="titulo__pokemon">JOKENPOKEMON</h1>
-                <div id="pokemon__lista" style="display: nogne;">
+                <div id="pokemon__lista" >
                     <!-- Aqui aparecem os personagens vindos pelo javascript com innerHTML -->
                 </div>
 
