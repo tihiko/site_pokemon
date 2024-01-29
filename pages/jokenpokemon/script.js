@@ -1,10 +1,10 @@
 
 
 //URL da API
-let url = 'https://pokeapi.co/api/v2/pokemon/'; 
+let url = 'https://pokeapi.co/api/v2/pokemon/';
 
 
-bichinhos = [3, 4, 15, 19, 31, 59, 5, 6, 25, 26, 33, 77, 150, 483, 133, 614, 645, 652, 663,658,689,675]
+bichinhos = [3, 4, 15, 19, 31, 59, 5, 6, 25, 26, 33, 77, 150, 483, 133, 614, 645, 652, 663, 658, 689, 675]
 
 
 // console.log(bichinhos.length)
@@ -70,7 +70,7 @@ bichinhos.forEach(function (monstrinhos) {
                     fundo = "white"
                     break;
             }
-            
+
 
             document.getElementById("pokemon__lista").innerHTML +=
                 `  

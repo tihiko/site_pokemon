@@ -23,7 +23,7 @@ body {
     position: relative;
 }
 
-.imagem-de-fundo { 
+.imagem-de-fundo1 { 
     width: 100%; 
     height: 30vh;
 
@@ -130,7 +130,7 @@ body {
 
 @media(max-width: 600px){
 
-    .imagem-de-fundo {
+    .imagem-de-fundo1 {
         width: 100%; 
         height: 15vh;
 
