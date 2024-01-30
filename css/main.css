@@ -18,9 +18,17 @@
     text-indent: 20px;
 }
 .inform__devs{
-    line-height: 7px;
+   line-height: 7px;
    border-bottom: 4px solid purple;
-   margin-top: 15px;
+   margin-top: 15px; 
+}
+.desenvolvedores{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+}
+.desenvolvedores a{    
+    color: #ffffff;    
 }
 
 /*mideas
