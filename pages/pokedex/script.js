@@ -90,7 +90,7 @@
             }
 
             if(normalGif == "normal"){
-                tipoImg = data['sprites']['other']['official-artwork']['front_default']
+                tipoImg = data['sprites']['other']['home']['front_default']
             }                
             else if(normalGif == "gif"){
                 tipoImg = data['sprites']['other']['showdown']['front_default']
