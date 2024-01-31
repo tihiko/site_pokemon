@@ -1,6 +1,4 @@
-function showAnime(vlrMove) {
-
-   
+function showAnime(vlrMove) {   
 
     var showVideo = document.getElementById("trailer__apps")
     

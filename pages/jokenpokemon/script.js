@@ -4,7 +4,7 @@
 let url = 'https://pokeapi.co/api/v2/pokemon/';
 
 
-bichinhos = [3, 4, 15, 19, 31, 59, 5, 6, 25, 26, 33, 77, 150, 483, 133, 614, 645, 652, 663, 658, 689, 675]
+bichinhos = [3, 4, 15, 19, 31, 59, 5, 6, 25, 26, 33, 77, 150, 483, 133, 614, 64, 652, 663, 658, 689, 675]
 
 
 // console.log(bichinhos.length)
@@ -22,7 +22,7 @@ bichinhos.forEach(function (monstrinhos) {
         //them entra mais um nível do objeto e atribui a variável 'data'
         .then((data) => {
             // console.clear();
-            // console.log(data);
+            console.log(data);
             // console.log(data['types'][0]['type']['name']);
             //Switch que define a cor de fundo de cada card
             switch (data['types'][0]['type']['name']) {
@@ -81,7 +81,9 @@ bichinhos.forEach(function (monstrinhos) {
                             <img class="pokemons__return" src="${data['sprites']['other']['official-artwork']['front_default']}" alt=""style="background-color: ${fundo};">
                             </button>
                             <br><br>
-                            <h6>${data['name'].toUpperCase()} </h6> 
+                            <h3>${data['name'].toUpperCase()} </h3> 
+                           
+                            <h5>${data['types'][0]['type']['name'].toUpperCase()} </h5> 
                               <br>
                         </div>                              
                         

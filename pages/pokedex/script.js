@@ -93,8 +93,15 @@
                 tipoImg = data['sprites']['other']['home']['front_default']
             }                
             else if(normalGif == "gif"){
-                tipoImg = data['sprites']['other']['showdown']['front_default']
-            }
+
+                if(data['sprites']['other']['showdown']['front_default'] == null){
+                    tipoImg = data['sprites']['other']['home']['front_default']
+                }else{
+                    tipoImg = data['sprites']['other']['showdown']['front_default']
+           
+                }
+
+                 }
 
                         
 

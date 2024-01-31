@@ -17,15 +17,15 @@ body {
 
 
 
-.imagem-de-fundo {
+.imagem-de-fundo3 {
     width: 100%;
-    height: 15vh;
+    height: 25vh;
 }
 
-.imagem-sobreposta { 
+.imagem-sobreposta3 { 
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 25%;
+    left: 5%;
     width: 200px;
 
 }
@@ -279,8 +279,15 @@ border-radius: 15px;
 }
 
 
-
-
+.modo__jogo{
+    background-image: linear-gradient(orange,tomato);
+    padding: 5px 20px;
+    width: 90%;
+}
+.modo__jogo p{
+    font-size: 22px;
+    font-weight: bold;
+}
 .falas{
     width: 96%;
     height: 100px;
