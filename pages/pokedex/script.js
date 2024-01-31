@@ -90,12 +90,12 @@
             }
 
             if(normalGif == "normal"){
-                tipoImg = data['sprites']['other']['home']['front_default']
+                tipoImg = data['sprites']['other']['official-artwork']['front_default']
             }                
             else if(normalGif == "gif"){
 
                 if(data['sprites']['other']['showdown']['front_default'] == null){
-                    tipoImg = data['sprites']['other']['home']['front_default']
+                    tipoImg = data['sprites']['other']['official-artwork']['front_default']
                 }else{
                     tipoImg = data['sprites']['other']['showdown']['front_default']
            
