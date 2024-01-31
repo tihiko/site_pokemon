@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     *{
         margin:0 auto;
         padding:0;
@@ -31,7 +31,13 @@
         left: 0px;
         width: 35%;
     }
+    .unavbarNavAltMarkup{
+        display: flex;
 
+        align-items: center;
+
+        justify-content: center;
+    }
     .pokebolaIcon{
         
         font-size: 100%;
@@ -146,7 +152,7 @@
     }
     .pokemonImage{
         display: flex;
-        width: 70%;
+        width: 20%;
     }
     .box{
         width: 100%;
@@ -161,20 +167,7 @@
         align-items: center;
     }
 
-    .box::after{
-        content: attr(data-text);
-        position: absolute;
-        bottom: 20px;
-        background: #000000;
-        color: #ffffff;
-        
-
-        text-transform: uppercase;
-        transform: translateY(30px);
-        opacity: 0;
-        transition: all 400ms;
-        
-    }
+  
 
     .container-1:hover .box{
         filter: grayscale(100%) opacity(24%);
@@ -274,32 +267,6 @@
         width: 100%;
     }
 
-    .desenvolvedores{
-        background-color: #545454;
-        border: 1px solid black;
-        margin-top: 30px;
-        display: grid;
-        grid-template-areas: 
-        "dev dev dev"
-        "dev dev dev";
-    }
-    .dev{
-        margin-top: 10px;
-        width: 90%;
-        border-radius: 5px;
-        background-color: #0099cc;
-        border: 1px solid black;
-    }
-    .desenvolvedores img{
-        margin-top: 10px;
-        width: 25%;
-        display: flex;
-        justify-content: center;
-    }
-    .desenvolvedores h3{
-        color:#000000;
-        font-family: "Roboto", sans-serif;
-    }
-
+   
    
 }
