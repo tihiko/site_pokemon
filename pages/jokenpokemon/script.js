@@ -12,7 +12,7 @@ bichinhos = [3, 4, 15, 19, 31, 59, 5, 6, 25, 26, 33, 77, 150, 483, 133, 614, 64,
 bichinhos.forEach(function (monstrinhos) {
     // console.log(monstrinhos)
 
-    var retorno = url + monstrinhos + "/"
+    let retorno = url + monstrinhos + "/"
 
     fetch(retorno)
         //then tras o que está dentro do objeto e atribui a response
@@ -102,7 +102,7 @@ function escolher(id) {
     `
 
     // Concatena a url principal com a id do personagem escolhido vinda na função
-    var jogador = url + id + "/"
+    let jogador = url + id + "/"
     fetch(jogador)
         .then((retornarJogador) => {
             return retornarJogador.json()
@@ -121,8 +121,8 @@ function escolher(id) {
          
          `
         })
-    var idOponente = null
-    var escolherOponente = Number.parseInt(Math.random() * 10 + 1)
+    let idOponente = null
+    let escolherOponente = Number.parseInt(Math.random() * 10 + 1)
 
     if (escolherOponente == 1) {
         idOponente = 115
@@ -146,7 +146,7 @@ function escolher(id) {
         idOponente = 812
     }
 
-    var oponentes = url + idOponente + "/"
+    let oponentes = url + idOponente + "/"
     // console.clear()
     // console.log(oponentes)
     fetch(oponentes)
@@ -169,18 +169,22 @@ function escolher(id) {
 
         })
 
-    var esconder = document.getElementById("pokemon__lista")
+    let esconder = document.getElementById("pokemon__lista")
     esconder.style.display = "none"
 
-    var showGame = document.getElementById("show__game")
+    let showGame = document.getElementById("show__game")
     showGame.style.display = "grid"
+
+    let escolhaPokemon = document.getElementById("escolha__pokemon")
+    escolhaPokemon.style.display = "none"
+
 
 }
 function sairDoJogo() {
-    var esconder = document.getElementById("pokemon__lista")
+    let esconder = document.getElementById("pokemon__lista")
     esconder.style.display = "flex"
 
-    var showGame = document.getElementById("show__game")
+    let showGame = document.getElementById("show__game")
     showGame.style.display = "none"
 }
 
