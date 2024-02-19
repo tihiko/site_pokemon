@@ -7,7 +7,7 @@
 }
 .container__devs section{
     width: 100%;
-    background-color: rgb(238, 0, 255);
+    background-color: rgb(245, 208, 128);
     min-height: 70vh;
     padding: 30px;
 }
@@ -21,6 +21,13 @@
    line-height: 7px;
    border-bottom: 4px solid purple;
    margin-top: 15px; 
+   font-size: 22px;
+   font-weight: bold;
+}
+.inform__devs p a {
+text-decoration: none;
+color
+
 }
 .desenvolvedores{
     background-color: #000000;

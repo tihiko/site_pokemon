@@ -1,11 +1,11 @@
 
 function showAnime(vlrMove) {
 
-   
+
 
     var showVideo = document.getElementById("aberturas__temporadas")
-    
-showVideo.style.zIndex="5"
+
+    showVideo.style.zIndex = "5"
 
     switch (vlrMove) {
         case 9:
@@ -14,7 +14,7 @@ showVideo.style.zIndex="5"
             break;
         case 1:
             var frame = ' <iframe class="iframe__video" width="480px" height="279px" src="https://www.youtube.com/embed/-PlAg8R9TG4?si=LjnrVhtu0rqDZr-J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
-           var temporada = 1
+            var temporada = 1
             break;
         case 2:
             var frame = '<iframe class="iframe__video" width="480px" height="279px" src="https://www.youtube.com/embed/XeoynHW8py8?si=HFrkzGGvRxAf8Zsu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
@@ -61,11 +61,11 @@ ${frame}
 }
 
 function sairVideo() {
-    
+
     var showVideo = document.getElementById("aberturas__temporadas")
 
     showVideo.innerHTML =
         ``
 
-        showVideo.style.zIndex="-1"
+    showVideo.style.zIndex = "-1"
 }
