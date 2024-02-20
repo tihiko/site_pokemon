@@ -18,10 +18,10 @@
     text-indent: 20px;
 }
 .inform__devs{
-   line-height: 7px;
+   line-height: 20px;
    border-bottom: 4px solid purple;
    margin-top: 15px; 
-   font-size: 22px;
+   font-size: 20px;
    font-weight: bold;
 }
 .inform__devs p a {
